@@ -14,8 +14,8 @@
 #include "Cell.hpp"
 
 //Screen dimension constants
-const int SCREEN_WIDTH = 1000;
-const int SCREEN_HEIGHT = 800;
+const int SCREEN_WIDTH = 800;
+const int SCREEN_HEIGHT = 450;
 const int PIXEL_SIZE = 2;
 const int X_SIZE = SCREEN_WIDTH/PIXEL_SIZE;
 const int Y_SIZE = SCREEN_HEIGHT/PIXEL_SIZE;
