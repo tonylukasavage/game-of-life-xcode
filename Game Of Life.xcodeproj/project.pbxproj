@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EA0D6DA11F197943001EAB03 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA0D6DA01F197943001EAB03 /* main.cpp */; };
+		EA0D6DA91F1979AB001EAB03 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0D6DA81F1979AB001EAB03 /* SDL2.framework */; };
+		EA0D6DAC1F1A5675001EAB03 /* Cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA0D6DAA1F1A5675001EAB03 /* Cell.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		EA0D6D9D1F197943001EAB03 /* Game Of Life */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Game Of Life"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0D6DA01F197943001EAB03 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EA0D6DA81F1979AB001EAB03 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		EA0D6DAA1F1A5675001EAB03 /* Cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cell.cpp; sourceTree = "<group>"; };
+		EA0D6DAB1F1A5675001EAB03 /* Cell.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Cell.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0D6DA91F1979AB001EAB03 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +49,7 @@
 			children = (
 				EA0D6D9F1F197943001EAB03 /* Game Of Life */,
 				EA0D6D9E1F197943001EAB03 /* Products */,
+				EA0D6DA71F1979AB001EAB03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +65,18 @@
 			isa = PBXGroup;
 			children = (
 				EA0D6DA01F197943001EAB03 /* main.cpp */,
+				EA0D6DAA1F1A5675001EAB03 /* Cell.cpp */,
+				EA0D6DAB1F1A5675001EAB03 /* Cell.hpp */,
 			);
 			path = "Game Of Life";
+			sourceTree = "<group>";
+		};
+		EA0D6DA71F1979AB001EAB03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA0D6DA81F1979AB001EAB03 /* SDL2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA0D6DA11F197943001EAB03 /* main.cpp in Sources */,
+				EA0D6DAC1F1A5675001EAB03 /* Cell.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +238,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = QMNQP9P6N5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -228,6 +250,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = QMNQP9P6N5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
